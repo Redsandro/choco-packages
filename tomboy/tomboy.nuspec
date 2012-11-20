@@ -13,7 +13,7 @@
 		<copyright></copyright>
 		<licenseUrl>http://www.gnu.org/copyleft/lesser.html</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<iconUrl>https://github.com/Redsandro/chocolatey/tomboy/img/tomboy.128x128.png</iconUrl>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/tomboy/img/tomboy.128x128.png</iconUrl>
 			<dependencies>
 				<!--<dependency id=".NET" version="3.5" />-->
 				<!-- http://www.microsoft.com/downloads/details.aspx?FamilyId=333325FD-AE52-4E35-B531-508D977D32A6&displaylang=en -->
