@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>tomboy</id>
+		<title>Tomboy Notes 1.10.2</title>
+		<version>1.10.2</version>
+		<authors>Alex Graveley</authors>
+		<owners>Redsandro</owners>
+		<summary>Multi-platform utility to create and synchronize notes.</summary>
+		<description>Tomboy is a desktop note-taking application for Linux, Unix, Windows, and Mac OS X. Simple and easy to use, but with potential to help you organize the ideas and information you deal with every day. Synchronize your notes using Ubuntu One.</description>
+		<projectUrl>http://projects.gnome.org/tomboy/</projectUrl>
+		<tags>note notes notetaking multiplatform synchronize</tags>
+		<copyright></copyright>
+		<licenseUrl>http://www.gnu.org/copyleft/lesser.html</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://github.com/Redsandro/chocolatey/tomboy/img/tomboy.128x128.png</iconUrl>
+			<dependencies>
+				<!--<dependency id=".NET" version="3.5" />-->
+				<!-- http://www.microsoft.com/downloads/details.aspx?FamilyId=333325FD-AE52-4E35-B531-508D977D32A6&displaylang=en -->
+				<dependency id="gtksharp" version="2.12.10" />
+				<!-- http://download.mono-project.com/gtk-sharp/gtk-sharp-2.12.10.win32.msi -->
+			</dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<!--<file src="content\**" target="content" />-->
+	</files>
+</package>

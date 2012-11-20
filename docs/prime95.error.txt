@@ -1,0 +1,55 @@
+E:\docs\tools>cinst prime95
+=====================================================
+Chocolatey (0.9.8.19) is installing prime95  to "C:\Common\Chocolatey\lib". By i
+nstalling you accept the license for the package you are installing (please run
+chocolatey /? for full license acceptance terms).
+=====================================================
+
+-------------------------
+Chocolatey Runner (PRIME95 v26.6.3)
+-------------------------
+  -------------------------
+   PowerShell  (chocolateyinstall.ps1)
+  -------------------------
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----        11/19/2012     01:29            prime95
+Downloading prime95 (ftp://mersenne.org/gimps/p95v266.zip) to C:\Users\Sander\Ap
+pData\Local\Temp\chocolatey\prime95\prime95Install.zip
+Copy-Item : Cannot find drive. A drive with the name 'ftp' does not exist.
+At C:\Common\Chocolatey\chocolateyInstall\helpers\functions\Get-ChocolateyWebFi
+le.ps1:59 char:5
++     Copy-Item $url -Destination $fileFullPath -Force
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (ftp:String) [Copy-Item], DriveN
+   otFoundException
+    + FullyQualifiedErrorId : DriveNotFound,Microsoft.PowerShell.Commands.Copy
+   ItemCommand
+
+Extracting C:\Users\Sander\AppData\Local\Temp\chocolatey\prime95\prime95Install.
+zip to C:\Common\Chocolatey\lib\prime95.26.6.3\tools...
+Write-Error : prime95 did not finish successfully. Boo to the chocolatey gods!
+-----------------------
+[ERROR] You cannot call a method on a null-valued expression.
+-----------------------
+At C:\Common\Chocolatey\chocolateyInstall\helpers\functions\Write-ChocolateyFai
+lure.ps1:29 char:2
++     Write-Error $errorMessage
++     ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorExcep
+   tion
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorExceptio
+   n,Write-Error
+
+You cannot call a method on a null-valued expression.
+At C:\Common\Chocolatey\chocolateyInstall\helpers\functions\Get-ChocolateyUnzip
+.ps1:39 char:2
++     $destinationFolder.CopyHere($zipPackage.Items(),0x10)
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [], ParentContainsErrorRec
+   ordException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+
+E:\docs\tools>
