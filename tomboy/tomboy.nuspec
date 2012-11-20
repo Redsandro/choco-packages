@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>tomboy</id>
-		<title>Tomboy Notes 1.10.2</title>
-		<version>1.10.2</version>
+		<title>Tomboy Notes</title>
+		<version>1.10.2.20121120</version>
 		<authors>Alex Graveley</authors>
 		<owners>Redsandro</owners>
 		<summary>Multi-platform utility to create and synchronize notes.</summary>
