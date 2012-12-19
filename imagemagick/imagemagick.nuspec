@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>imagemagick</id>
+		<title>ImageMagick</title>
+		<version>6.8.0.10</version>
+		<authors>ImageMagick Studio LLC</authors>
+		<owners>Redsandro</owners>
+		<summary>ImageMagick is an Open Source command-line toolset for manipulating, converting, and editing raster image files. It can read and write over 100 image file formats.</summary>
+		<description>ImageMagick is an Open Source command-line toolset for manipulating, converting, and editing raster image files. It can read and write over 100 image file formats.</description>
+		<projectUrl>http://www.imagemagick.org/</projectUrl>
+		<tags>graphics image conversion editing manipulating library</tags>
+		<copyright></copyright>
+		<licenseUrl>http://www.imagemagick.org/script/license.php</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/freeotfe/img/freeotfe.128x128.png</iconUrl>
+		<dependencies></dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>

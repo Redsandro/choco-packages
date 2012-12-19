@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>freeotfe</id>
+		<title>FreeOTFE</title>
+		<version>5.21</version>
+		<authors>Sarah Dean</authors>
+		<owners>Redsandro</owners>
+		<summary>FreeOTFE is a free, open source, "on-the-fly" transparent disk encryption program with LUKS (Linux) support.</summary>
+		<description>FreeOTFE is a free, open source, "on-the-fly" transparent disk encryption program with LUKS (Linux) support. With this software you can mount LUKS-encrypted Linux drives, share LUKS drives between Operating Systems, or create one or more "virtual disks". These disks operate exactly like a normal disk, with the exception that anything written to one of them is transparently, and securely, encrypted before being stored on your computer's hard drive.</description>
+		<projectUrl>http://www.freeotfe.org/</projectUrl>
+		<tags>LUKS OTFE encryption security</tags>
+		<copyright></copyright>
+		<licenseUrl>http://www.freeotfe.org/docs/Main/licence.htm</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/freeotfe/img/freeotfe.128x128.png</iconUrl>
+		<dependencies></dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
