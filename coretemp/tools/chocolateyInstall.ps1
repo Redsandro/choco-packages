@@ -1,5 +1,4 @@
 try { 
-  ### What the hell does this line do?
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   
   ### Let's take BinRoot instead.
