@@ -3,11 +3,11 @@
 	<metadata>
 		<id>foobar2000.rs</id>
 		<title>foobar2000</title>
-		<version>1.2.0.20130104</version>
+		<version>1.2.0.20130107</version>
 		<authors>Peter Pawlowski</authors>
 		<owners>Redsandro</owners>
 		<summary>Foobar2000 is an advanced freeware audio player for the Windows platform.</summary>
-		<description>(Note: The foobar2000 package has been broken for a while. This is a non-updating replacement.) Foobar2000 is an advanced freeware audio player for the Windows platform. Some of the basic features include full unicode support, ReplayGain support and native support for several popular audio formats.</description>
+		<description>(Note: The original foobar2000 package has been broken for a while. This is a non-updating alternative.) Foobar2000 is an advanced freeware audio player for the Windows platform. Some of the basic features include full unicode support, ReplayGain support and native support for several popular audio formats.</description>
 		<projectUrl>http://www.foobar2000.org</projectUrl>
 		<tags>foobar2000 media mp3 player id3 tagging</tags>
 		<copyright></copyright>
