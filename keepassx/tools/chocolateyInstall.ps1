@@ -10,7 +10,7 @@ try {
 
 $langcode = (Get-Culture).Name # Get language and country code
 $langcode = "$langcode" -replace '-[a-z]{2}', '' # Remove country code
-#$langcode = "" # Change language code for test purposes
+#$langcode = "en" # Change language code for test purposes
 $langurl1 = "http://downloads.sourceforge.net/keepass/"
 
 $langfiles = @{
@@ -60,13 +60,14 @@ $langfiles = @{
 }
 
 $langurl2 = $langfiles[$langcode]
-
 $langurl = "$langurl1$langurl2"
-$langurl
 
-$keepasspath = "$env:ProgramFiles\KeePass Password Safe"
-$keepasspathx86 = "${env:ProgramFiles(x86)}\KeePass Password Safe"
-if (Test-Path "$keepasspath") {$unzipLocation = "$keepasspath"}
-if (Test-Path "$keepasspathx86") {$unzipLocation = "$keepasspathx86"}
+if ($langcode -ne "en") {
 
-Install-ChocolateyZipPackage 'keepass language file' $langurl "$unzipLocation"
+    $keepasspath = "$env:ProgramFiles\KeePass Password Safe"
+    $keepasspathx86 = "${env:ProgramFiles(x86)}\KeePass Password Safe"
+    if (Test-Path "$keepasspath") {$unzipLocation = "$keepasspath"}
+    if (Test-Path "$keepasspathx86") {$unzipLocation = "$keepasspathx86"}
+
+    Install-ChocolateyZipPackage 'keepass language file' $langurl "$unzipLocation"
+}
