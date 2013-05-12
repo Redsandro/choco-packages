@@ -3,7 +3,7 @@
 	<metadata>
 		<id>keepassx</id>
 		<title>KeePass Classic Password Safe</title>
-		<version>1.24.20121120</version>
+		<version>1.25</version>
 		<authors>Dominik Reichl</authors>
 		<owners>Redsandro</owners>
 		<summary>This version of the popular KeePass password manager is compatible with KeePassX for Linux and OSX.</summary>
