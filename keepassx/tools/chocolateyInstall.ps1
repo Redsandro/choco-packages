@@ -1,5 +1,5 @@
 $name = 'KeePass Classic'
-$url  = 'http://downloads.sourceforge.net/project/keepass/KeePass%201.x/1.24/KeePass-1.24-Setup.exe?r=&ts=1353364762&use_mirror=netcologne'
+$url = 'http://downloads.sourceforge.net/keepass/KeePass-1.25-Setup.exe'
 try {
     Install-ChocolateyPackage $name 'EXE' '/VERYSILENT' $url
     Write-ChocolateySuccess $name
