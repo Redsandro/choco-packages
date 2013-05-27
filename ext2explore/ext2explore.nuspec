@@ -3,7 +3,7 @@
 	<metadata>
 		<id>ext2explore</id>
 		<title>Ext2Read - Ext2Explore</title>
-		<version>2.2.71</version>
+		<version>2.2.71.2</version>
 		<authors>Manish Regmi</authors>
 		<owners>Redsandro</owners>
 		<summary>Read Ext2/Ext3/Ext4 filesystems. Write Ext2/Ext3 filesystems.</summary>
@@ -13,7 +13,7 @@
 		<copyright></copyright>
 		<licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/ext2read/img/ext2read.128x128.png</iconUrl>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/ext2explore/img/ext2read.128x128.png</iconUrl>
 			<dependencies></dependencies>
 		<releaseNotes></releaseNotes>
 	</metadata>

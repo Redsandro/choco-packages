@@ -3,7 +3,7 @@
 	<metadata>
 		<id>renamemaster</id>
 		<title>Rename Master</title>
-		<version>3.3.0.20130107</version>
+		<version>3.4</version>
 		<authors>Joe Joe Soft</authors>
 		<owners>Redsandro</owners>
 		<summary>Rename Master is a freeware utility designed to rename multiple files with a just few clicks.</summary>
@@ -15,7 +15,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/renamemaster/img/renamemaster.128x128.png</iconUrl>
 		<dependencies>
-			<dependency id="Chocolatey" version="0.9.8.20" />
+			<!-- <dependency id="Chocolatey" version="0.9.8.20" /> -->
 		</dependencies>
 		<releaseNotes></releaseNotes>
 	</metadata>
