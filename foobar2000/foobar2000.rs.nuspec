@@ -3,7 +3,7 @@
 	<metadata>
 		<id>foobar2000.rs</id>
 		<title>foobar2000</title>
-		<version>1.2.0.20130107</version>
+		<version>1.2.8.20130627</version>
 		<authors>Peter Pawlowski</authors>
 		<owners>Redsandro</owners>
 		<summary>Foobar2000 is an advanced freeware audio player for the Windows platform.</summary>
@@ -14,5 +14,8 @@
 		<licenseUrl>http://www.foobar2000.org/?page=License</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/foobar2000/img/foobar2000.128x128.png</iconUrl>
+		<dependencies>
+			<dependency id="foobar2000" />
+		</dependencies>
 	</metadata>
 </package>
