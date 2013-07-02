@@ -3,7 +3,8 @@
 	<metadata>
 		<id>tomboy</id>
 		<title>Tomboy Notes</title>
-		<version>1.10.2.20121120</version>
+		<!-- <version>1.14.0</version> -->
+		<version>1.15.1-beta</version>
 		<authors>Alex Graveley</authors>
 		<owners>Redsandro</owners>
 		<summary>Multi-platform utility to create and synchronize notes.</summary>
