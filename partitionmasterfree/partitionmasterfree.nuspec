@@ -3,7 +3,9 @@
 	<metadata>
 		<id>PartitionMasterFree</id>
 		<title>EaseUS Partition Master Free Edition</title>
+
 		<version>9.2.2.20130702</version>
+
 		<authors>CHENGDU Yiwo® Tech Development Co., Ltd</authors>
 		<owners>Redsandro</owners>
 		<summary>Free (for personal use) and Easy-to-use Disk Management Software.</summary>
@@ -12,7 +14,8 @@
 		<tags>disk partition manager system admin</tags>
 		<copyright>2005-2013 CHENGDU Yiwo® Tech Development Co., Ltd. All rights reserved.</copyright>
 		<licenseUrl>http://www.easeus.com/license.htm</licenseUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
 		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/partitionmasterfree/img/partitionmasterfree.128x128.png</iconUrl>
 		<dependencies></dependencies>
 		<releaseNotes></releaseNotes>
