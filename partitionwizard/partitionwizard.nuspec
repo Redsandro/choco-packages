@@ -2,9 +2,9 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>partitionwizard</id>
-		<title>MiniTool® Partition Wizard Home Edition</title>
-		<version>7.8</version>
-		<authors>MiniTool® Solution Ltd.</authors>
+		<title>MiniToolï¿½ Partition Wizard Home Edition</title>
+		<version>8.0</version>
+		<authors>MiniToolï¿½ Solution Ltd.</authors>
 		<owners>Redsandro</owners>
 		<summary>Home users can perform complicated partition operations by using this powerful yet free partition manager to manage their hard disk.</summary>
 		<description>MiniTool Partition Wizard Home Edition is a free partition manager software designed by MiniTool Solution Ltd. Our partition manager supports 32/64 bit Windows Operating System including Windows XP, Vista, Windows 7 and Windows 8. Home users can perform complicated partition operations by using this powerful yet free partition manager to manage their hard disk. Functions include: Resizing partitions, Copying partitions, Create partition, Extend Partition, Split Partition, Delete partition, Format partition, Convert partition, Explore partition, Hide partition, Change drive letter, Set active partition, Partition Recovery. </description>
@@ -17,8 +17,4 @@
 			<dependencies></dependencies>
 		<releaseNotes></releaseNotes>
 	</metadata>
-	<files>
-		<file src="tools\**" target="tools" />
-		<!--<file src="content\**" target="content" />-->
-	</files>
 </package>
