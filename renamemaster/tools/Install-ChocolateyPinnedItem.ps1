@@ -28,7 +28,7 @@ function Install-ChocolateyPinnedItem {
 	$verbStart['en-US'] = "Start" 
 	$verbStart['fi-FI'] = "Käynnistä"
 	$verbStart['nb-NO'] = "Start"
-	$verbStart['nl-NL'] = "vastmaken" 
+	$verbStart['nl-NL'] = "Start" 
 	$verbStart['sv-SE'] = "Start"
 	
 	# (Pin to) Taskbar
