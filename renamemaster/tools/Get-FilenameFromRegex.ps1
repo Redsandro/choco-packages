@@ -25,10 +25,8 @@ function Get-FilenameFromRegex {
 
 		# Download and open download page
 		$tempfile = "chocolatey_temp_download.html"
-		$wc = new-object system.net.webclient
-		$wc.UseDefaultCredentials = $true
-		$wc.downloadfile($source_url, $tempfile)
-		$source = Get-Content $tempfile
+		$wc = new-object system.Net.WebClient;
+		$source = $wc.downloadString($source_url);
 		
 		$nothing = ''+$source -cmatch $find # Get the matches, prevent output
 		# Replace Match-references with previous matches: $1 $2 -> $matches[1] $matches[2]
