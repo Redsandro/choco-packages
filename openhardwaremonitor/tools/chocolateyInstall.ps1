@@ -1,6 +1,6 @@
 $name = 'OpenHardwareMonitor'
 $pwd = "$(split-path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'http://openhardwaremonitor.org/files/openhardwaremonitor-v0.5.1-beta.zip'
+$url = 'http://openhardwaremonitor.org/files/openhardwaremonitor-v0.6.0-beta.zip'
 
 
 try { 
