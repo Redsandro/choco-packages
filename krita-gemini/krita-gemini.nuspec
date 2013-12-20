@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>krita-gemini</id>
+		<title>Krita Gemini (Touch)</title>
+		<version>2.7.9.0</version>
+		<authors>KDE</authors>
+		<owners>Redsandro</owners>
+		<summary>Digital painting and illustration software.</summary>
+		<description>Krita's design emphasizes creating artwork from beginning to end as opposed to manipulating existing images. Therefore it has been influenced to an extent by software such as Corel Painter, but Krita supports a very different feature set than the most comparable applications. For example Krita developers included the ability to work with both bitmap and vector illustration on one hand, but deliberately choose to avoid high end photography plugins in favor of features more specific to painting and drawing.</description>
+		<projectUrl>http://krita.org/</projectUrl>
+		<tags>paint painting media illustration</tags>
+		<copyright></copyright>
+		<licenseUrl>https://gnu.org/licenses/gpl.html</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/krita-gemini/img/krita-gemini.128x128.png</iconUrl>
+			<dependencies></dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
