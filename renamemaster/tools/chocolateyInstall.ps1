@@ -3,10 +3,11 @@ $pwd = "$(split-path -parent $MyInvocation.MyCommand.Definition)"
 $url = "http://www.joejoesoft.com/cms/file.php?f=userupload%2f8%2ffiles%2frmv308.zip";
 
 
-# Combatibility - merged in 0.9.8.23
-if (!(Get-Command Get-BinRoot -errorAction SilentlyContinue)) {
-	Import-Module "$($pwd)\Get-BinRoot.ps1"
-}
+# Combatibility - merged in 0.9.8.23 but contains error up to 0.9.8.24, so skipping for now
+#if (!(Get-Command Get-BinRoot -errorAction SilentlyContinue)) {
+#	Import-Module "$($pwd)\Get-BinRoot.ps1"
+#}
+Import-Module "$($pwd)\Get-BinRoot.ps1"
 
 # Combatibility - This function has not been merged
 if (!(Get-Command Install-ChocolateyPinnedItem -errorAction SilentlyContinue)) {
