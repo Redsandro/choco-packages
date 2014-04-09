@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>copy</id>
+		<title>Copy.com Agent</title>
+		<version>1.43.0290</version>
+		<authors>Barracuda Networks, inc</authors>
+		<owners>Redsandro</owners>
+		<summary>Sync, protect, and share. Everywhere. Cloud Storage.</summary>
+		<description>Sync, protect, and share. Everywhere. Cloud Storage.
+
+Want 20GB free cloud storage to start your cloud?
+Sign up using this referal for a bonus: https://copy.com?r=pkXaFl</description>
+		<projectUrl>http://www.copy.com</projectUrl>
+		<tags>Cloud Sync Share</tags>
+		<copyright></copyright>
+		<licenseUrl>http://developers.copy.com</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/copy/img/copy.128x128.png</iconUrl>
+		<dependencies></dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<!--<file src="content\**" target="content" />-->
+	</files>
+</package>
