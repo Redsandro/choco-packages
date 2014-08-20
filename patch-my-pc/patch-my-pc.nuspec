@@ -7,7 +7,11 @@
 		<authors>Patch My PC</authors>
 		<owners>Redsandro</owners>
 		<summary>Patch My PC creates software to patch third party applications to fix security vulnerabilities.</summary>
-		<description>Patch My PC helps to simplify the process of keeping your software up to date.</description>
+		<description>
+Patch My PC helps to simplify the process of keeping your software up to date.
+
+_Link to start menu is no longer working. Looking for a package writer who can fix this._
+		</description>
 		<releaseNotes></releaseNotes>
 		<projectUrl>http://patchmypc.net/</projectUrl>
 		<tags>Admin Software Update Updates</tags>
