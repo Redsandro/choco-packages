@@ -1,11 +1,11 @@
-$name = 'Windows Tweaker'
-$url = 'http://tweaker.blob.core.windows.net/downloads/Windows_Tweaker_5.2-Setup.exe'
-$switch = '/S /v/qn'
+$name = 'Alcohol 52%'
+$url = 'http://www.filefacts.com/alcohol-52-free-edition-quickdownload'
+$switch = ''
 
 try {
-	Install-ChocolateyPackage $name 'EXE' $switch $url
-	Write-ChocolateySuccess $name
+	Install-ChocolateyPackage "$name" 'EXE' "$switch" "$url"
+	Write-ChocolateySuccess "$name"
 } catch {
-	Write-ChocolateyFailure $name $($_.Exception.Message)
+	Write-ChocolateyFailure "$name" $($_.Exception.Message)
 	throw
 }
