@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>truecombat-elite</id>
+		<title>True Combat: Elite</title>
+		<version>0.49.1</version>
+		<authors>Team Terminator & GrooveSix Studios</authors>
+		<owners>Redsandro</owners>
+		<summary>TrueCombat is a FREE tactical-teamplay oriented, modern-world combat simulation first person shooter (FPS).</summary>
+		<description>TrueCombat is a FREE tactical-teamplay oriented, modern-world combat simulation first person shooter (FPS). TrueCombat was first introduced in 2000 and was a pioneer in introducing an iron sight aiming system (ISIS) and removing the crosshair.</description>
+		<projectUrl>http://www.truecombatelite.com/</projectUrl>
+		<tags>fps game q3 quake</tags>
+		<copyright></copyright>
+		<licenseUrl></licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/truecombat-elite/img/truecombat-elite.128x128.png</iconUrl>
+		<dependencies>
+			<dependency id="Chocolatey" version="0.9.8.23" />
+		</dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>
