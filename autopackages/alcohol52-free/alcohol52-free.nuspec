@@ -3,7 +3,7 @@
 	<metadata>
 		<id>alcohol52-free</id>
 		<title>Alcohol 52% Free</title>
-		<version>2.0.3.6734-alpha2</version>
+		<version>{{PackageVersion}}-alpha</version>
 		<authors>Alcohol Soft.</authors>
 		<owners>Redsandro</owners>
 		<summary>Emulation software allowing users to play CDs DVDs without the need for the physical disc.</summary>

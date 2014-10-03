@@ -1,9 +1,9 @@
-$name = 'Alcohol 52%'
-$id = "Alcohol52FE"
-$url = 'http://www.filefacts.com/alcohol-52-free-edition-quickdownload'
-$pwd = "$(split-path -parent $MyInvocation.MyCommand.Definition)"
-$au3 = 'alcohol52-free.au3'
-$fName = "Alcohol52FE_downloader.exe"
+$name	= 'Alcohol 52%'
+$id		= "Alcohol52FE"
+$url	= 'http://www.filefacts.com/alcohol-52-free-edition-quickdownload'
+$pwd	= "$(split-path -parent $MyInvocation.MyCommand.Definition)"
+$au3	= 'alcohol52-free.au3'
+$fName	= "Alcohol52_v{{PackageVersion}}.FE_downloader.exe"
 
 try {
 
