@@ -4,7 +4,7 @@
 		<id>PartitionMasterFree</id>
 		<title>EaseUS Partition Master (Free)</title>
 
-		<version>9.2.2.20131028</version>
+		<version>{{PackageVersion}}</version>
 
 		<authors>CHENGDU Yiwo© Tech Development Co., Ltd</authors>
 		<owners>Redsandro</owners>
