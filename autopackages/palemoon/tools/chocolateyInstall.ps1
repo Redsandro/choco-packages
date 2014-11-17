@@ -1,7 +1,7 @@
 $packageName	= 'PaleMoon'
 $installerType	= 'EXE'
 $url			= '{{DownloadUrl}}'
-$url64			= '{{DownloadUrl64}}'
+$url64			= '{{DownloadUrlx64}}'
 $silentArgs		= '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes	= @(0)
 $pwd			= "$(split-path -parent $MyInvocation.MyCommand.Definition)"
