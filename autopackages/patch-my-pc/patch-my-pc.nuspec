@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
-		<id>patch-my-pc</id>
+		<id>{{PackageName}}</id>
 		<title>Patch my PC</title>
-		<version>2.5.0.0</version>
+		<version>{{PackageVersion}}</version>
 		<authors>Patch My PC</authors>
 		<owners>Redsandro</owners>
 		<summary>Patch My PC creates software to patch third party applications to fix security vulnerabilities.</summary>

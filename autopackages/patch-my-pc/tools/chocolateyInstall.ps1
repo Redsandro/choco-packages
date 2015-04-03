@@ -17,24 +17,14 @@ try {
 	# Calculate $binRoot, which should always be set in $env:ChocolateyBinRoot as a full path (not relative)
 	$binRoot = Get-BinRoot;
 
-    #if (![System.IO.Directory]::Exists($tempDir)) { [System.IO.Directory]::CreateDirectory($tempDir) | Out-Null }
-    #$file = Join-Path $tempDir "$($id)Install.$fileType"
-    $file = "$binRoot\PatchMyPC.exe"
-    $tempFile = "$pwd\PatchMyPC.exe"
-
-    Write-Host "Did someone change the binRoot?";
-    Write-Host "Old: $binRoot";
-    Write-Host "New: $nugetExePath";
+    Write-Host "Downloading to: $nugetExePath";
+    $tempFile = Join-Path $nugetExePath "PatchMyPC.exe"
 
     Get-ChocolateyWebFile $id "$tempFile" "$url"
 
 	# Copy shortcut to start menu
-#	Install-ChocolateyPinnedItem "$file"
-#	Install-ChocolateyPinnedItem "$tempFile"
 
-	$meh = Join-Path $nugetExePath "PatchMyPC.exe"
-	
-	Install-ChocolateyPinnedItem $meh
+	Install-ChocolateyPinnedItem $tempFile
 
     Write-ChocolateySuccess $name
 } catch {
