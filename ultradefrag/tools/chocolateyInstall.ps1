@@ -1,16 +1,59 @@
 $packageName = 'ultradefrag'
 $installerType = 'exe' 
-#$url = 'http://switch.dl.sourceforge.net/project/ultradefrag/stable-release/5.1.2/ultradefrag-6.0.2.bin.i386.exe'
-#$url = 'http://garr.dl.sourceforge.net/project/ultradefrag/stable-release/6.0.2/ultradefrag-6.0.2.bin.i386.exe'
-$url = 'http://garr.dl.sourceforge.net/project/ultradefrag/latest-release-candidates/7.0.0%20beta1/ultradefrag-7.0.0-beta1.bin.i386.exe'
-#$url64 = 'http://freefr.dl.sourceforge.net/project/ultradefrag/stable-release/5.1.2/ultradefrag-5.1.2.bin.amd64.exe'
-#$url64 = 'http://heanet.dl.sourceforge.net/project/ultradefrag/stable-release/6.0.2/ultradefrag-6.0.2.bin.amd64.exe'
-$url64 = 'http://heanet.dl.sourceforge.net/project/ultradefrag/latest-release-candidates/7.0.0%20beta1/ultradefrag-7.0.0-beta1.bin.amd64.exe'
-$silentArgs = '/S /FULL=1'
+$url = 'https://sourceforge.net/projects/ultradefrag/files/stable-release/6.1.0/ultradefrag-6.1.0.bin.i386.exe/download'
+$url64 = 'https://sourceforge.net/projects/ultradefrag/files/stable-release/6.1.0/ultradefrag-6.1.0.bin.amd64.exe/download'
+$silentArgs = $('/S /FULL=1')
+
+$arguments = @{};
+# /NoShellExtension /DisableUsageTracking /NoBootInterface
+$packageParameters = $env:chocolateyPackageParameters;
+
+# Default the values
+$noShellExtension = $false
+$disableUsageTracking = $false
+$noBootInterface = $false
+
+# Now parse the packageParameters using good old regular expression
+if ($packageParameters) {
+    $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
+    #"
+    $option_name = 'option'
+    $value_name = 'value'
+
+    if ($packageParameters -match $match_pattern ){
+        $results = $packageParameters | Select-String $match_pattern -AllMatches
+        $results.matches | % {
+          $arguments.Add(
+              $_.Groups[$option_name].Value.Trim(),
+              $_.Groups[$value_name].Value.Trim())
+      }
+    }
+    else
+    {
+      throw "Package Parameters were found but were invalid (REGEX Failure)"
+    }
+
+    if ($arguments.ContainsKey("NoShellExtension")) {
+        #Write-Host "You want Git on the command line"
+        $noShellExtension = $true
+    }
+
+    if ($arguments.ContainsKey("DisableUsageTracking")) {
+        #Write-Host "You want Git and Unix Tools on the command line"
+        $disableUsageTracking = $true
+    }
+
+    if ($arguments.ContainsKey("NoBootInterface")) {
+        #Write-Host "Ensuring core.autocrlf is false on first time install only"
+        #Write-Host " This setting will not adjust an already existing .gitconfig setting."
+        $noBootInterface = $true
+    }
+} else {
+    Write-Debug "No Package Parameters Passed in";
+}
+
+if ($noShellExtension) { $silentArgs += " /SHELLEXTENSION=0" }
+if ($disableUsageTracking) { $silentArgs += " /DISABLE_USAGE_TRACKING=1" }
+if ($noBootInterface) { $silentArgs += " /BOOT=0" }
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"
-
-# Now rename the ugly context-menuitem ------UltraDefrag--------- to Ultra Defragmenter
-
-#Install-ChocolateyExplorerMenuItem udefrag '&Ultra Defragmenter' '\"C:\Program Files (x86)\Notepad++\notepad++.exe\" -with -some -arguments \"%1\"'
-#"C:\Windows\system32\udefrag.exe" --shellex "%1"
