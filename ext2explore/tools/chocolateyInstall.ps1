@@ -1,6 +1,6 @@
 $name = 'ext2explore'
 $pwd = "$(split-path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'http://surfnet.dl.sourceforge.net/project/ext2read/Ext2read%20Version%202.2%20%28Latest%29/ext2explore-2.2.71.zip'
+$url = 'https://downloads.sourceforge.net/project/ext2read/Ext2read%20Version%202.2%20%28Latest%29/ext2explore-2.2.71.zip'
 
 try { 
 	#Install-ChocolateyZipPackage '$name' "$zipUrl" "$pwd"
