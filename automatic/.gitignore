@@ -1,0 +1,10 @@
+*.nupkg
+*.swp
+Thumbs.db
+.DS_Store
+*.log
+/automatic/_output/
+/Update-AUPackages.md
+/Update-History.md
+/update_vars.ps1
+/update_info.xml

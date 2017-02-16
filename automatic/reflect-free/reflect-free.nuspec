@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>reflect-free</id>
+		<title>Macrium Reflect Free</title>
+		<version>5.3.7149.3</version>
+		<authors>Macrium</authors>
+		<owners>Redsandro</owners>
+		<summary>A complete disaster recovery solution for your home system.</summary>
+		<description>
+A __free disaster recovery__ solution for your __home computer.__
+
+__Protect__ your personal files. __Clone your harddisk__ and __create disk images__ in the safe knowledge that everything is __securely saved__ in an __easily recovered__ backup.
+
+### This package is broken. Not silent.
+
+I had this package offline until I found the time to fix the CNET downloader. Once I did and I pushed this, I found that _Reflect_ now downloads a __downloader__ which can download any _Reflect_ version.
+
+__I am looking for a maintainer with AutoIT skills or something similar to fix the new Macrium downloader to auto-download the free version and install that one.__
+		</description>
+		<releaseNotes>
+__Bug fixes__
+
+* The error "Bad file descriptor" could cause a clone to fail. This has been resolved.
+* Free and Standard editions. The error message "Dynamic Disks are not supported" could incorrectly be displayed when editing an XML file. This has been resolved.
+* If the source driver files are marked as 'Read Only' this could cause a copy failure when building the Windows PE rescue media. This has been resolved.
+* Improved support for Linux systems using Grub 2
+		</releaseNotes>
+		<projectUrl>http://www.macrium.com/reflectfree.aspx</projectUrl>
+		<tags>Admin disk drive image partition clone hdd</tags>
+		<copyright></copyright>
+		<licenseUrl>http://www.macrium.com/pages/legal.aspx</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>http://i.imgur.com/yrUDEg0.png</iconUrl>
+		<dependencies></dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<!--<file src="content\**" target="content" />-->
+	</files>
+</package>

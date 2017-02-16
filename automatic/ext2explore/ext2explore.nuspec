@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>ext2explore</id>
+		<title>Ext2Read - Ext2Explore</title>
+		<version>2.2.71.2</version>
+		<authors>Manish Regmi</authors>
+		<owners>Redsandro</owners>
+		<summary>Read Ext2/Ext3/Ext4 filesystems. Write Ext2/Ext3 filesystems.</summary>
+		<description>Ext2Read is an explorer like utility to explore ext2/ext3/ext4 files. It now supports LVM2 and EXT4 extents. It can be used to view and copy files and folders. It can recursively copy entire folders. </description>
+		<projectUrl>http://sourceforge.net/projects/ext2read/</projectUrl>
+		<tags>linux filesystem tools ext2 ext3 ext4</tags>
+		<copyright></copyright>
+		<licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/ext2explore/img/ext2read.128x128.png</iconUrl>
+			<dependencies></dependencies>
+		<releaseNotes></releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<!--<file src="content\**" target="content" />-->
+	</files>
+</package>

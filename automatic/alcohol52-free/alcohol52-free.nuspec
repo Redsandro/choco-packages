@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>alcohol52-free</id>
+		<title>Alcohol 52% Free</title>
+		<version>{{PackageVersion}}-alpha</version>
+		<authors>Alcohol Soft.</authors>
+		<owners>Redsandro</owners>
+		<summary>Emulation software allowing users to play CDs DVDs without the need for the physical disc.</summary>
+		<description>
+## Please help me fix the AutoIt3 installer.
+			
+### Emulation software allowing users to play CDs DVDs without the need for the physical disc.
+
+Notebook users and PC Game players would benifit the most from Alcohol 52% Supports 25 plus languages Can handle up to 31 virtual CD DVD-ROM drives, all at once. The reading speed of a virtual CD-ROM is 200X.
+
+CD formats supported: CD-DA, CD+G, CD-ROM, CD-XA, Video CD, Photo CD, Mixed Mode, Multi-session CD DVD formats supported: DVD-ROM, DVD-Video, DVD-Audio Support for all current (ATAPI SCSI) drives: CD-R, CD-RW, DVD-RAM, DVD-R, DVD-RW, DVD+RW Full support for IEEE-1394 (Firewire) and USB protocols.
+
+### NOT SILENT
+
+__Looking for maintainers who can create AutoIT to make this silent/unattended.__
+		</description>
+		<releaseNotes></releaseNotes>
+		<projectUrl>http://www.alcohol-soft.com/</projectUrl>
+		<tags>ISO emulation</tags>
+		<copyright></copyright>
+		<licenseUrl>http://www.alcohol-soft.com/en/eula.php</licenseUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<iconUrl>http://i.imgur.com/QXFY5n8.png</iconUrl>
+		<dependencies>
+			<dependency id="autoit.commandline" version="3.3.12.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+		<!--<file src="content\**" target="content" />-->
+	</files>
+</package>
