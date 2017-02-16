@@ -1,4 +1,4 @@
-* text eol=crlf whitespace=trailing-space,tab-in-indent,tabwidth=2
+* text eol=crlf whitespace=trailing-space,space-before-tab,tabwidth=4
 
 *.nuspec text eol=lf
 *.au3 text eol=lf
