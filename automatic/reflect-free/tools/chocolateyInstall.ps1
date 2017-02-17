@@ -1,38 +1,23 @@
-$name = 'Macrium-Reflect'
-$id = 'reflect-free'
-$url = 'http://www.macrium.com/reflectfree.aspx'
-$regex = '(?ms).*href="(http://download.cnet.com/.+?)".*'
-$switch = '/quiet /norestart'
-$pwd = "$(split-path -parent $MyInvocation.MyCommand.Definition)"
-
-
-
-# This should have been merged centuries ago.
-if (!(Get-Command Get-UrlFromCnet -errorAction SilentlyContinue)) {
-	Import-Module "$($pwd)\Get-UrlFromCnet.ps1"
+﻿$fileName     = 'ReflectDL.exe'
+$softwareName = 'Macrium Reflect Installer'
+$toolsPath    = "$env:systemdrive\tools"
+$filePath     = "$toolsPath\$fileName"
+$packageArgs  = @{
+  packageName             = 'reflect-free'
+  url                     = 'http://updates.macrium.com/reflect/v6/ReflectDL.exe'
 }
 
+Get-WebFile "$($packageArgs.url)" "$filePath"
 
+# Shortcut
+$desktop = [System.Environment]::GetFolderPath('Desktop')
+$startMenu = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::StartMenu)
+Install-ChocolateyShortcut -ShortcutFilePath "$desktop\$softwareName.lnk" -TargetPath "$filePath"
+Install-ChocolateyShortcut -ShortcutFilePath "$startMenu\Programs\$softwareName.lnk" -TargetPath "$filePath"
 
-try {
-
-	# Let's get the link from CNET first.
-	$newUrl = Get-UrlFromCnet $url $regex
-
-	# I truely do not understand why the $%@! this turned into an array, and where the true comes from
-	# [0] = ' ' (space)
-	# [1] = True
-	# [2] = url
-	$url = $newUrl[2]
-
-	Write-Host "Found $url"
-
-	# Installer
-	Install-ChocolateyPackage $id 'EXE' $switch "$url"
-
-	Write-ChocolateySuccess $name
-
-} catch {
-	Write-ChocolateyFailure $name $($_.Exception.Message)
-	throw
-}
+# Warn about unfinished business
+Write-Host
+Write-Host "The installer could not be automated." -ForegroundColor "White"
+Write-Host "We've placed a link to the installer on your Desktop." -ForegroundColor "White"
+Write-Host "You can manually run this installer at your earliest convenience." -ForegroundColor "White"
+Write-Host
