@@ -31,7 +31,7 @@ function global:au_GetLatest {
 
   @{
     SoftwareName    = 'Ex2 Explorer'
-    Version         = "$version.20100623"
+    Version         = "$version"
     URL32           = "$url"
 #   Checksum32      = "$md5" # Invalid
     ChecksumType32  = 'md5'
