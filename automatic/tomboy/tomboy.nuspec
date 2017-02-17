@@ -1,30 +1,27 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>tomboy</id>
 		<title>Tomboy Notes</title>
-		<!-- <version>1.14.0</version> -->
-		<version>1.15.1-beta</version>
+		<version>1.15.7</version>
 		<authors>Alex Graveley</authors>
-		<owners>Redsandro</owners>
-		<summary>Multi-platform utility to create and synchronize notes.</summary>
+		<owners>Redsandro,chocolatey</owners>
+    <tags>note notes notetaking multiplatform synchronize foss office productivity</tags>
+		<projectUrl>https://wiki.gnome.org/Apps/Tomboy</projectUrl>
+    <licenseUrl>https://www.gnu.org/copyleft/lesser.html</licenseUrl>
+    <iconUrl>https://raw.github.com/Redsandro/choco-packages/master/automatic/tomboy/icon/tomboy.png</iconUrl>
+    <packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/tomboy</packageSourceUrl>
+		<copyright />
+    <summary>Multi-platform utility to create and synchronize notes.</summary>
 		<description>Tomboy is a desktop note-taking application for Linux, Unix, Windows, and Mac OS X. Simple and easy to use, but with potential to help you organize the ideas and information you deal with every day. Synchronize your notes using Ubuntu One.</description>
-		<projectUrl>http://projects.gnome.org/tomboy/</projectUrl>
-		<tags>note notes notetaking multiplatform synchronize</tags>
-		<copyright></copyright>
-		<licenseUrl>http://www.gnu.org/copyleft/lesser.html</licenseUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<iconUrl>https://raw.github.com/Redsandro/chocolatey/master/tomboy/img/tomboy.128x128.png</iconUrl>
 			<dependencies>
-				<!--<dependency id=".NET" version="3.5" />-->
-				<!-- http://www.microsoft.com/downloads/details.aspx?FamilyId=333325FD-AE52-4E35-B531-508D977D32A6&displaylang=en -->
-				<dependency id="gtksharp" version="2.12.10" />
-				<!-- http://download.mono-project.com/gtk-sharp/gtk-sharp-2.12.10.win32.msi -->
+				<dependency id="gtk-runtime" version="2.24.10.20121010" />
+				<dependency id="gtksharp" version="2.12.42" />
 			</dependencies>
 		<releaseNotes></releaseNotes>
 	</metadata>
 	<files>
 		<file src="tools\**" target="tools" />
-		<!--<file src="content\**" target="content" />-->
 	</files>
 </package>
