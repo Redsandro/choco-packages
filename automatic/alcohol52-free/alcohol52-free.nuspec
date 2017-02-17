@@ -6,11 +6,15 @@
 		<version>2.0.3.9326</version>
 		<authors>Alcohol Soft.</authors>
 		<owners>Redsandro,chocolatey</owners>
+		<tags>ISO emulation notsilent toolbar</tags>
 		<projectUrl>http://www.alcohol-soft.com/</projectUrl>
 		<iconUrl>https://cdn.rawgit.com/Redsandro/choco-packages/5c1f373049e6d457434751765475052f9ece3a4e/icons/alcohol52-free.png</iconUrl>
 		<licenseUrl>http://www.alcohol-soft.com/en/eula.php</licenseUrl>
-		<tags>ISO emulation notsilent toolbar</tags>
-		<copyright></copyright>
+		<packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/alcohol52-free</packageSourceUrl>
+		<projectSourceUrl />
+		<docsUrl />
+		<mailingListUrl />
+		<copyright />
 		<summary>Emulation software allowing users to play CDs DVDs without the need for the physical disc.</summary>
 		<description>
 ### Emulation software allowing users to play CDs DVDs without the need for the physical disc.

@@ -1,27 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
 	<metadata>
 		<id>driverpacksolution</id>
-		<title>DriverPack Solution Lite</title>
-		<version>13.0.314</version>
+		<title>Driver Pack Solution Online</title>
+		<version>17.2016.11.11</version>
 		<authors>Artur Kuzyakov</authors>
-		<owners>Redsandro</owners>
-		<summary>Scan your computer hardware and find all hardware drivers you need.</summary>
-		<description>__DriverPack Solution 13 Lite__ is a lite version of the most powerful manager for automated driver installation. Scans your computer hardware and offers a download from the Internet for all unidentified drivers, saving the frustration of googling everything manually.</description>
-		<releaseNotes>
-Lite version does not include database drivers, software and diagnostic tools. For permanent use it is recommended to download the full 8GB version via torrent.
-You can download the Full Version driver packs (free) from within the program by opening the Drivers tab.
-		</releaseNotes>
+		<owners>Redsandro,chocolatey</owners>
+		<tags>admin drivers hardware system drivers</tags>
 		<projectUrl>http://drp.su</projectUrl>
-		<tags>Admin Drivers Hardware</tags>
-		<copyright></copyright>
 		<licenseUrl>http://drp.su/about.htm</licenseUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<iconUrl>http://i.imgur.com/QeatG6u.png</iconUrl>
+		<packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/driverpacksolution</packageSourceUrl>
+		<projectSourceUrl />
+		<docsUrl />
+		<mailingListUrl />
+		<copyright />
+		<summary>Scan your computer hardware and find all hardware drivers you need.</summary>
+		<description>
+__Driver Pack Solution Online__ is the online version of the most powerful manager for automated driver installation. Scans your computer hardware and offers a download from the Internet for all unidentified drivers, saving the frustration of googling everything manually.
+
+###Warning
+
+This driver pack contains unverified drivers from a third party source. Do not install this pack unless you explicitly want to.
+Many anti-virus programs classify this driver pack as a [potentially unwanted program](https://www.virustotal.com/file/544af50f42dea8a2d459d00aca344bd549374577d1d78d91e2a28a4ef91d1bc3/analysis/1486089104/).
+
+You have been warned.
+		</description>
+		<releaseNotes>
+Online version does not include database drivers, software and diagnostic tools. Selected options will be downloaded on request.
+For offline use it is recommended to download the full 10GB version via bittorrent.
+		</releaseNotes>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<dependencies></dependencies>
 	</metadata>
 	<files>
 		<file src="tools\**" target="tools" />
-		<!--<file src="content\**" target="content" />-->
 	</files>
 </package>
