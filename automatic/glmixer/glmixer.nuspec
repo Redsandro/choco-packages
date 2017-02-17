@@ -10,7 +10,7 @@
     <projectUrl>http://glmixer.sourceforge.net/</projectUrl>
     <licenseUrl>https://sourceforge.net/p/glmixer/Source/HEAD/tree/trunk/COPYING.txt</licenseUrl>
     <iconUrl>https://raw.github.com/Redsandro/choco-packages/master/automatic/glmixer/icon/glmixer.png</iconUrl>
-    <packageSourceUrl>https://github.com/chocolatey/chocolatey-coreteampackages/tree/master/automatic/glmixer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/glmixer</packageSourceUrl>
     <projectSourceUrl>https://sourceforge.net/p/glmixer/Source/HEAD/tree/</projectSourceUrl>
     <docsUrl>https://sourceforge.net/p/glmixer/wiki/UserManual/</docsUrl>
     <summary>Real-time video mixing software for live performances</summary>
