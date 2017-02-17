@@ -1,5 +1,4 @@
 *.nupkg
 *.exe
-*-orig.*
 Thumbs.db
 .DS_Store
