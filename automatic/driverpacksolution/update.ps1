@@ -14,10 +14,10 @@ function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
       "(?i)(^\s*url\s*=\s*)('.*')"            = "`$1'$($Latest.URL32)'"
-#      "(?i)(^\s*checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
-#      "(?i)(^\s*checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
-	  "(?i)(^[$]fileName32\s*=\s*)('.*')"     = "`$1'$($Latest.FileName32)'"
-	  "(?i)(^\s*packageName\s*=\s*)'.*'"      = "`$1'$($Latest.PackageName)'"
+#     "(?i)(^\s*checksum\s*=\s*)('.*')"       = "`$1'$($Latest.Checksum32)'"
+#     "(?i)(^\s*checksumType\s*=\s*)('.*')"   = "`$1'$($Latest.ChecksumType32)'"
+      "(?i)(^[$]fileName32\s*=\s*)('.*')"     = "`$1'$($Latest.FileName32)'"
+      "(?i)(^\s*packageName\s*=\s*)'.*'"      = "`$1'$($Latest.PackageName)'"
       "(?i)^(\s*softwareName\s*=\s*)'.*'"     = "`$1'$($Latest.SoftwareName)'"
     }
   }
@@ -33,11 +33,11 @@ function global:au_GetLatest {
   $url = "http://download.drp.su/$file"
 
   @{
-	SoftwareName    = 'Driver Pack Solution'
+    SoftwareName    = 'Driver Pack Solution'
     Version	        = $version
     URL32  	        = $url
-	FileName32      = $file
-	ChecksumType32  = 'sha256'
+    FileName32      = $file
+    ChecksumType32  = 'sha256'
   }
 }
 
