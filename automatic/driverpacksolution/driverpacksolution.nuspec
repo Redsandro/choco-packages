@@ -11,9 +11,6 @@
 		<licenseUrl>http://drp.su/about.htm</licenseUrl>
 		<iconUrl>http://i.imgur.com/QeatG6u.png</iconUrl>
 		<packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/driverpacksolution</packageSourceUrl>
-		<projectSourceUrl />
-		<docsUrl />
-		<mailingListUrl />
 		<copyright />
 		<summary>Scan your computer hardware and find all hardware drivers you need.</summary>
 		<description>

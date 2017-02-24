@@ -11,9 +11,7 @@
 		<iconUrl>https://cdn.rawgit.com/Redsandro/choco-packages/5c1f373049e6d457434751765475052f9ece3a4e/icons/alcohol52-free.png</iconUrl>
 		<licenseUrl>http://www.alcohol-soft.com/en/eula.php</licenseUrl>
 		<packageSourceUrl>https://github.com/Redsandro/choco-packages/tree/master/automatic/alcohol52-free</packageSourceUrl>
-		<projectSourceUrl />
-		<docsUrl />
-		<mailingListUrl />
+		<docsUrl>http://support.alcohol-soft.com/en/faq.php</docsUrl>
 		<copyright />
 		<summary>Emulation software allowing users to play CDs DVDs without the need for the physical disc.</summary>
 		<description>
