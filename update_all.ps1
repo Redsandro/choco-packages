@@ -1,4 +1,5 @@
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
+# PS disable blocking: Set-ExecutionPolicy Bypass -Scope Process
 
 param([string] $Name, [string] $ForcedPackages, [string] $Root = "$PSScriptRoot\automatic")
 
