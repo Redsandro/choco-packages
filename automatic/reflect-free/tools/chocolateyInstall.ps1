@@ -1,10 +1,11 @@
-﻿$toolsDir     = Split-Path $MyInvocation.MyCommand.Definition
+﻿$toolsDir  = Split-Path $MyInvocation.MyCommand.Definition
 
 $url  = 'http://updates.macrium.com/reflect/v6/ReflectDL.exe'
-$toolsPath = Get-ToolsLocation
 $fileName  = $url -split '/' | select -Last 1
-$dwnAgentPath = "$toolsPath\$fileName"
+$dwnAgentPath = "$(Get-ToolsLocation)\$fileName"
 Get-WebFile $url $dwnAgentPath
+
+Write-Host "Running Macrium download agent via Autohotkey"
 
 rm $Env:TEMP\MacriumInstall\Macrium\* -ea 0
 Autohotkey.exe $toolsDir\install.ahk $dwnAgentPath
@@ -13,7 +14,7 @@ if (!$installer) { Write-Host "Can't automated Macrium install, please run manua
 
 $packageArgs = @{
   packageName    = 'reflect-free'
-  fileType       = exe
+  fileType       = 'exe'
   file           = $installer
   silentArgs     = '/passive'
   validExitCodes = @(0)
