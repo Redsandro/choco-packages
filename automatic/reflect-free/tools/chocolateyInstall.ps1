@@ -21,4 +21,5 @@ $packageArgs = @{
   sowftwareName  = 'Macrium Reflect*'
 }
 Install-ChocolateyInstallPackage @packageArgs
-rm $Env:TEMP\MacriumInstall\Macrium\* -ea 0
+# rm $Env:TEMP\MacriumInstall\Macrium\* -ea 0
+Write-Host "The installer might still be at $installer"
