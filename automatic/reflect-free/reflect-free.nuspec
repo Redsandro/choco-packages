@@ -32,7 +32,9 @@ __I am not that ninja.__
 		</description>
 		<releaseNotes></releaseNotes>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<dependencies></dependencies>
+		<dependencies>
+			<dependency id="autohotkey.portable" />
+		</dependencies>
 	</metadata>
 	<files>
 		<file src="tools\**" target="tools" />
