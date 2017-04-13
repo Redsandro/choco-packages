@@ -11,7 +11,7 @@ WinActivate
     Send, {Enter}
     
     WinWait,, License Agreement
-    Send, !a,
+    Send, !a
     Send, {Enter}
     
     WinWait,, License key
