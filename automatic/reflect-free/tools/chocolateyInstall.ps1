@@ -1,23 +1,23 @@
-﻿$fileName     = 'ReflectDL.exe'
-$softwareName = 'Macrium Reflect Installer'
-$toolsPath    = "$env:systemdrive\tools"
-$filePath     = "$toolsPath\$fileName"
-$packageArgs  = @{
-  packageName             = 'reflect-free'
-  url                     = 'http://updates.macrium.com/reflect/v6/ReflectDL.exe'
+﻿$toolsDir     = Split-Path $MyInvocation.MyCommand.Definition
+
+$url  = 'http://updates.macrium.com/reflect/v6/ReflectDL.exe'
+$toolsPath = Get-ToolsLocation
+$fileName  = $url -split '/' | select -Last 1
+$dwnAgentPath = "$toolsPath\$fileName"
+Get-WebFile $url $dwnAgentPath
+
+rm $Env:TEMP\MacriumInstall\Macrium\* -ea 0
+Autohotkey.exe $toolsDir\install.ahk $dwnAgentPath
+$installer = gi $Env:TEMP\MacriumInstall\Macrium\*.exe -ea 0
+if (!$installer) { Write-Host "Can't automated Macrium install, please run manually $dwnAgentPath" }
+
+$packageArgs = @{
+  packageName    = 'reflect-free'
+  fileType       = exe
+  file           = $installer
+  silentArgs     = '/passive'
+  validExitCodes = @(0)
+  sowftwareName  = 'Macrium Reflect*'
 }
-
-Get-WebFile "$($packageArgs.url)" "$filePath"
-
-# Shortcut
-$desktop = [System.Environment]::GetFolderPath('Desktop')
-$startMenu = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::StartMenu)
-Install-ChocolateyShortcut -ShortcutFilePath "$desktop\$softwareName.lnk" -TargetPath "$filePath"
-Install-ChocolateyShortcut -ShortcutFilePath "$startMenu\Programs\$softwareName.lnk" -TargetPath "$filePath"
-
-# Warn about unfinished business
-Write-Host
-Write-Host "The installer could not be automated." -ForegroundColor "White"
-Write-Host "We've placed a link to the installer on your Desktop." -ForegroundColor "White"
-Write-Host "You can manually run this installer at your earliest convenience." -ForegroundColor "White"
-Write-Host
+Install-ChocolateyInstallPackage @packageArgs
+rm $Env:TEMP\MacriumInstall\Macrium\* -ea 0
