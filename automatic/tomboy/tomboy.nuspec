@@ -3,7 +3,7 @@
 	<metadata>
 		<id>tomboy</id>
 		<title>Tomboy Notes</title>
-		<version>1.15.7</version>
+		<version>1.15.9</version>
 		<authors>Alex Graveley</authors>
 		<owners>Redsandro,chocolatey</owners>
     <tags>note notes notetaking multiplatform synchronize foss office productivity</tags>

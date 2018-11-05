@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = 'tomboy'
   fileType       = 'msi'
-  url            = 'http://download.gnome.org/binaries/win32/tomboy/1.15/Tomboy-1.15.7.msi'
-  checksum       = 'b59de7f2eae36c4761aeb90c02dfe91399f0a648c28ca378a5554f6dfb0291a1'
+  url            = 'https://download.gnome.org/binaries/win32/tomboy/1.15/Tomboy-1.15.9.msi'
+  checksum       = 'd31dfff589a61d92e5364bf3227c5da59651c6ad0a01d69ba32077cc58ebb254'
   checksumType   = 'sha256'
   silentArgs     = '/quiet'
   validExitCodes = @(0, 3010)
