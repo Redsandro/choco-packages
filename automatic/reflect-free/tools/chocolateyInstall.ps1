@@ -1,23 +1,19 @@
-﻿$fileName     = 'ReflectDL.exe'
-$softwareName = 'Macrium Reflect Installer'
-$toolsPath    = "$env:systemdrive\tools"
-$filePath     = "$toolsPath\$fileName"
-$packageArgs  = @{
-  packageName             = 'reflect-free'
-  url                     = 'http://updates.macrium.com/reflect/v6/ReflectDL.exe'
-}
+﻿$toolsDir  = Split-Path $MyInvocation.MyCommand.Definition
 
-Get-WebFile "$($packageArgs.url)" "$filePath"
+$url  = 'http://updates.macrium.com/reflect/v6/ReflectDL.exe'
+$agentfileName  = $url -split '/' | select -Last 1
+$downloadDir = "$(Get-ToolsLocation)\reflect-free"
+rm $downloadDir -Recurse -ea 0
 
-# Shortcut
-$desktop = [System.Environment]::GetFolderPath('Desktop')
-$startMenu = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::StartMenu)
-Install-ChocolateyShortcut -ShortcutFilePath "$desktop\$softwareName.lnk" -TargetPath "$filePath"
-Install-ChocolateyShortcut -ShortcutFilePath "$startMenu\Programs\$softwareName.lnk" -TargetPath "$filePath"
+Get-WebFile $url "$downloadDir\$agentfileName"
 
-# Warn about unfinished business
-Write-Host
-Write-Host "The installer could not be automated." -ForegroundColor "White"
-Write-Host "We've placed a link to the installer on your Desktop." -ForegroundColor "White"
-Write-Host "You can manually run this installer at your earliest convenience." -ForegroundColor "White"
-Write-Host
+Write-Host "Running Macrium download agent via Autohotkey"
+Autohotkey.exe $toolsDir\download.ahk "$downloadDir\$agentfileName" $downloadDir
+$installer = gi $downloadDir\Macrium\*.exe -ea 0
+if (!$installer) { Write-Host "Can't automate Macrium download agent, please run manually $downloadDir" }
+
+Write-Host "Running Macrium installer via Autohotkey: $installer"
+Autohotkey.exe $toolsDir\install.ahk $installer
+
+Write-Host "Installation completed"
+Write-Host "Downloaded files are left in: $downloadDir"
